@@ -1,0 +1,14 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "test doors",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"custom_test_door_upper": {
+			"textures": "textures/blocks/custom_door_upper"
+		},
+		"custom_test_door_lower": {
+			"textures": "textures/blocks/custom_door_lower"
+		}
+	}
+}

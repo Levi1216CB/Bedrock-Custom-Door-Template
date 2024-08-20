@@ -1,0 +1,67 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Reclaimed"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.34"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "test doors",
+		"description": "",
+		"min_engine_version": [
+			1,
+			21,
+			0
+		],
+		"uuid": "3c2c5d3a-3694-4daf-bab8-52f72ff7b517",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "31a5942a-af2c-4da0-aebf-30bb547cc35e",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "72695775-53e7-40e6-a85a-af2150663ae2",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "ed9d277b-30a9-43cf-ab8d-449f4cb5df6b",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.13.0"
+		}
+	]
+}

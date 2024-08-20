@@ -1,0 +1,8 @@
+{
+	"resource_pack_name": "test doors",
+	"texture_name": "atlas.items",
+	"texture_data": {
+	"custom_test_door":{
+"texture":"textures/items/custom_test_door"}
+}
+}

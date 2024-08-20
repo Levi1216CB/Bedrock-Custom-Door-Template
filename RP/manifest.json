@@ -1,0 +1,52 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Reclaimed"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.34"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "test doors",
+		"description": "",
+		"min_engine_version": [
+			1,
+			21,
+			0
+		],
+		"uuid": "ed9d277b-30a9-43cf-ab8d-449f4cb5df6b",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "e547309d-7fda-4380-b2df-110560d0f0d9",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "3c2c5d3a-3694-4daf-bab8-52f72ff7b517",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

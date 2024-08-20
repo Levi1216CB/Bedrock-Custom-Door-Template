@@ -1,0 +1,199 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:block": {
+		"description": {
+			"identifier": "custom:test_door",
+			"states": {
+				"custom:open": [
+					false,
+					true
+				],
+				"custom:rotation": [
+					0,
+					2,
+					4,
+					6
+				],
+				"custom:upper": [
+					false,
+					true
+				]
+			}
+		},
+		"components": {
+			"minecraft:tick": {
+				"looping": true,
+				"interval_range": [
+					0,
+					1
+				]
+			},
+			"minecraft:geometry": "geometry.test_door",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "custom_test_door_lower",
+					"render_method": "double_sided"
+				}
+			},
+			"minecraft:collision_box": {
+				"size": [
+					16,
+					16,
+					3
+				],
+				"origin": [
+					-8,
+					0,
+					-8
+				]
+			},
+			"minecraft:selection_box": {
+				"size": [
+					16,
+					16,
+					3
+				],
+				"origin": [
+					-8,
+					0,
+					-8
+				]
+			},
+			"minecraft:custom_components": [
+				"custom:door_setup"
+			]
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('custom:rotation') == 0",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('custom:rotation') == 4",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('custom:rotation') == 2",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('custom:rotation') == 6",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('custom:open')",
+				"components": {
+					"minecraft:geometry": "geometry.test_door_open",
+					"minecraft:collision_box": {
+						"size": [
+							3,
+							16,
+							16
+						],
+						"origin": [
+							-8,
+							0,
+							-8
+						]
+					},
+					"minecraft:selection_box": {
+						"size": [
+							3,
+							16,
+							16
+						],
+						"origin": [
+							-8,
+							0,
+							-8
+						]
+					}
+				}
+			},
+			{
+				"condition": "!query.block_state('custom:open')",
+				"components": {
+					"minecraft:geometry": "geometry.test_door",
+					"minecraft:collision_box": {
+						"size": [
+							16,
+							16,
+							3
+						],
+						"origin": [
+							-8,
+							0,
+							-8
+						]
+					},
+					"minecraft:selection_box": {
+						"size": [
+							16,
+							16,
+							3
+						],
+						"origin": [
+							-8,
+							0,
+							-8
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('custom:upper')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "custom_test_door_upper",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "!query.block_state('custom:upper')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "custom_test_door_lower",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		]
+	}
+}
